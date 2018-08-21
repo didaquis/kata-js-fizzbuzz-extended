@@ -1,0 +1,16 @@
+{
+  "name": "kata-js-fizzbuzz-extended",
+  "version": "0.0.1",
+  "description": "kata js fizzbuzz extended",
+  "main": "FizzBuzzExtended.js",
+  "scripts": {
+    "test": "jasmine spec/tests/*.js"
+  },
+  "keywords": ["kata", "JavaScript", "FizzBuzz", "Extended"],
+  "author": "Dídac García",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "jasmine": "^3.2.0"
+  }
+}

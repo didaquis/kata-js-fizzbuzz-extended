@@ -11,22 +11,22 @@ function fizzBuzzExtended(n) {
 		result += 'Pop';
 	}
 
-	if(result.length > 0) {
+	if(result.length) {
 		return result;
 	}
 	return n;
 }
 
-module.exports = fizzBuzzExtended;
-
 function isMultipleOfThree(n) {
 	return n % 3 === 0;
 }
 
-function isMultipleOfFive (n) {
+function isMultipleOfFive(n) {
 	return n % 5 === 0;
 }
 
-function isMultipleOfSeven (n) {
+function isMultipleOfSeven(n) {
 	return n % 7 === 0;
 }
+
+module.exports = fizzBuzzExtended;

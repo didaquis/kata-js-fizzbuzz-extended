@@ -1,4 +1,4 @@
-const fizzBuzzExtended = require('../../FizzBuzzExtended.js');
+const fizzBuzzExtended = require('../FizzBuzzExtended.js');
 
 describe('FizzBuzzExtended level one', () => {
 	it('Normal Numbers Return Same Number', () => {

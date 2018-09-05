@@ -1,11 +1,11 @@
 {
   "name": "kata-js-fizzbuzz-extended",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "kata js fizzbuzz extended",
   "main": "FizzBuzzExtended.js",
   "scripts": {
-    "test": "jasmine spec/tests/*.js",
-    "test:watch": "nodemon  --exec 'jasmine \"spec/tests/*.js\"'"
+    "test": "jasmine spec/*.js",
+    "test:watch": "nodemon  --exec 'jasmine \"spec/*.js\"'"
   },
   "keywords": [
     "kata",

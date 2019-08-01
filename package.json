@@ -1,11 +1,13 @@
 {
   "name": "kata-js-fizzbuzz-extended",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "kata js fizzbuzz extended",
   "main": "FizzBuzzExtended.js",
   "scripts": {
+    "start": "node .",
+    "lint": "eslint --ext .js .",
     "test": "jasmine spec/*.js",
-    "test:watch": "nodemon  --exec 'jasmine \"spec/*.js\"'"
+    "test:watch": "nodemon  --exec \"jasmine \"spec/*.js\"\""
   },
   "keywords": [
     "kata",
@@ -17,7 +19,8 @@
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
-    "jasmine": "^3.2.0",
-    "nodemon": "^1.18.4"
+    "eslint": "^6.1.0",
+    "jasmine": "^3.4.0",
+    "nodemon": "^1.19.1"
   }
 }

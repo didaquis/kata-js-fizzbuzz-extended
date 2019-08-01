@@ -1,6 +1,6 @@
 {
   "name": "kata-js-fizzbuzz-extended",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "kata js fizzbuzz extended",
   "main": "FizzBuzzExtended.js",
   "scripts": {

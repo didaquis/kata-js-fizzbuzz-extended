@@ -1,60 +1,68 @@
 const fizzBuzzExtended = require('../FizzBuzzExtended.js');
 
-describe('FizzBuzzExtended level one', () => {
+describe('FizzBuzzExtended: ', () => {
+
+	it('Must be defined', () => {
+		expect(fizzBuzzExtended).toBeDefined();
+	});
+
+	it('Should be a function', () => {
+		expect(fizzBuzzExtended).toEqual(jasmine.any(Function));
+	});
+
 	it('Normal Numbers Return Same Number', () => {
-		expect(fizzBuzzExtended(1)).toBe(1);
-		expect(fizzBuzzExtended(2)).toBe(2);
-		expect(fizzBuzzExtended(4)).toBe(4);
+		const numbers = [1, 2, 4];
+		numbers.forEach((n) => {
+			expect(fizzBuzzExtended(n)).toBe(n);
+		});
 	});
 
 	it('Multiples of Three Return Fizz', () => {
-		expect(fizzBuzzExtended(3)).toBe('Fizz');
-		expect(fizzBuzzExtended(6)).toBe('Fizz');
-		expect(fizzBuzzExtended(9)).toBe('Fizz');
-		expect(fizzBuzzExtended(12)).toBe('Fizz');
-		expect(fizzBuzzExtended(24)).toBe('Fizz');
-		expect(fizzBuzzExtended(123)).toBe('Fizz');
+		const numbers = [-3, 3, 6, 9, 12, 24, 123];
+		numbers.forEach((n) => {
+			expect(fizzBuzzExtended(n)).toBe('Fizz');
+		});
 	});
 
 	it('Multiples of Five Return Buzz', () => {
-		expect(fizzBuzzExtended(5)).toBe('Buzz');
-		expect(fizzBuzzExtended(10)).toBe('Buzz');
-		expect(fizzBuzzExtended(20)).toBe('Buzz');
-		expect(fizzBuzzExtended(50)).toBe('Buzz');
-		expect(fizzBuzzExtended(200)).toBe('Buzz');
+		const numbers = [-5, 5, 10, 20, 50, 200];
+		numbers.forEach((n) => {
+			expect(fizzBuzzExtended(n)).toBe('Buzz');
+		});
 	});
 
-	it('Multiples of Three and Five Return Fizz Buzz', () => {
-		expect(fizzBuzzExtended(15)).toBe('FizzBuzz');
-		expect(fizzBuzzExtended(30)).toBe('FizzBuzz');
-		expect(fizzBuzzExtended(45)).toBe('FizzBuzz');
+	it('Multiples of Three and Five Return FizzBuzz', () => {
+		const numbers = [-15, 15, 30, 45];
+		numbers.forEach((n) => {
+			expect(fizzBuzzExtended(n)).toBe('FizzBuzz');
+		});
 	});
-});
 
-
-describe('FizzBuzzExtended level two', () => {
 	it('Multiples of Seven Return Pop', () => {
-		expect(fizzBuzzExtended(7)).toBe('Pop');
-		expect(fizzBuzzExtended(14)).toBe('Pop');
-		expect(fizzBuzzExtended(28)).toBe('Pop');
-		expect(fizzBuzzExtended(77)).toBe('Pop');
+		const numbers = [-7, 7, 14, 28, 77];
+		numbers.forEach((n) => {
+			expect(fizzBuzzExtended(n)).toBe('Pop');
+		});
 	});
 	
-	it('Multiples of Three and Seven Return Fizz Pop', () => {
-		expect(fizzBuzzExtended(21)).toBe('FizzPop');
-		expect(fizzBuzzExtended(63)).toBe('FizzPop');
-		expect(fizzBuzzExtended(126)).toBe('FizzPop');
+	it('Multiples of Three and Seven Return FizzPop', () => {
+		const numbers = [-21, 21, 63, 126];
+		numbers.forEach((n) => {
+			expect(fizzBuzzExtended(n)).toBe('FizzPop');
+		});
 	});
 
-	it('Multiples of Five and Seven Return Buzz Pop', () => {
-		expect(fizzBuzzExtended(35)).toBe('BuzzPop');
-		expect(fizzBuzzExtended(70)).toBe('BuzzPop');
-		expect(fizzBuzzExtended(140)).toBe('BuzzPop');
+	it('Multiples of Five and Seven Return BuzzPop', () => {
+		const numbers = [-35, 35, 70, 140];
+		numbers.forEach((n) => {
+			expect(fizzBuzzExtended(n)).toBe('BuzzPop');
+		});
 	});
 
-	it('Multiples of Three, Five and Seven Return Fizz Buzz Pop', () => {
-		expect(fizzBuzzExtended(105)).toBe('FizzBuzzPop');
-		expect(fizzBuzzExtended(210)).toBe('FizzBuzzPop');
-		expect(fizzBuzzExtended(315)).toBe('FizzBuzzPop');
+	it('Multiples of Three, Five and Seven Return FizzBuzzPop', () => {
+		const numbers = [-105, 105, 210, 315];
+		numbers.forEach((n) => {
+			expect(fizzBuzzExtended(n)).toBe('FizzBuzzPop');
+		});
 	});
 });
